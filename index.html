@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpeedySlideShow 25 - Organize. Create. Relive.</title>
+  <meta name="description" content="Turn your photo library into beautiful slideshows. No cloud, no subscription - your memories stay on your computer.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/speedyslideshow-splash.png">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <img src="images/speedyslideshow-splash.png" alt="SpeedySlideShow" class="nav-logo-img">
+        <span>SpeedySlideShow<span class="version">25</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="#download">Download</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#download" class="btn btn-nav">Get It Free</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <img src="images/speedyslideshow-hero.png" alt="SpeedySlideShow 25" class="hero-logo" loading="eager">
+      <h1>Your memories deserve<br>a <span class="gradient-text">beautiful stage</span></h1>
+      <p class="hero-subtitle">Turn any photo folder into a stunning slideshow in seconds. No cloud uploads, no subscriptions, no complexity.</p>
+      <div class="hero-cta">
+        <a href="#download" class="btn btn-primary btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download for Windows
+        </a>
+        <a href="#features" class="btn btn-ghost btn-lg">See Features</a>
+      </div>
+      <div class="hero-badges">
+        <span class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Privacy-first</span>
+        <span class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> Windows 10+</span>
+        <span class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg> Pay once, keep forever</span>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+  </section>
+
+  <!-- Key Messages -->
+  <section class="key-messages">
+    <div class="container">
+      <div class="messages-grid">
+        <div class="message-card">
+          <div class="message-icon icon-blue">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Your memories, your computer</h3>
+          <p>No cloud uploads, ever. Your photos never leave your machine. Everything runs 100% locally.</p>
+        </div>
+        <div class="message-card">
+          <div class="message-icon icon-orange">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>One click, one slideshow</h3>
+          <p>Pick a folder, hit play. SpeedySlideShow 25 handles the rest with smart grouping and beautiful transitions.</p>
+        </div>
+        <div class="message-card">
+          <div class="message-icon icon-purple">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </div>
+          <h3>AI-powered, privacy-first</h3>
+          <p>Face detection and smart grouping run entirely on your machine. No data sent anywhere.</p>
+        </div>
+        <div class="message-card">
+          <div class="message-icon icon-pink">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <h3>No subscription, ever</h3>
+          <p>Pay once, keep forever. No recurring fees, no feature gates. It's yours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Everything you need to<br><span class="gradient-text">relive your best moments</span></h2>
+        <p>From organising thousands of photos to creating cinema-quality slideshows, SpeedySlideShow 25 does it all - right on your computer.</p>
+      </div>
+
+      <!-- Feature: Quick & Easy -->
+      <div class="feature-block">
+        <div class="feature-visual">
+          <div class="feature-screenshot">
+            <div class="screenshot-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              <span>Screenshot coming soon</span>
+            </div>
+          </div>
+        </div>
+        <div class="feature-text">
+          <div class="feature-label">Simplicity</div>
+          <h3>Quick and easy to use</h3>
+          <p>No complicated timelines or confusing menus. Just pick your photos and go - SpeedySlideShow 25 keeps everything simple so you can focus on your memories.</p>
+          <ul class="feature-list">
+            <li>No complicated timeline - just pick and play</li>
+            <li>Handles both photos and videos</li>
+            <li>Filter photos by quality, people, or favourites</li>
+            <li>Auto-group slides by date or create your own custom order</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature: Organisation -->
+      <div class="feature-block feature-block--reverse">
+        <div class="feature-visual">
+          <div class="feature-screenshot">
+            <img src="images/screenshot-organise.png" alt="Rename and Organize Files in SpeedySlideShow 25" class="screenshot-img" onclick="openLightbox(this.src)" role="button" tabindex="0">
+          </div>
+        </div>
+        <div class="feature-text">
+          <div class="feature-label">Organisation</div>
+          <h3>Point, click, organised</h3>
+          <p>Drop any folder in - iCloud, local drive, SD card - and SpeedySlideShow 25 instantly groups your photos by date or smart event clustering using time and location data.</p>
+          <ul class="feature-list">
+            <li>Automatic date-based grouping</li>
+            <li>Smart event clustering by time + location</li>
+            <li>Drag-and-drop reordering</li>
+            <li>Star favourites, exclude what you don't want</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature: Slideshows -->
+      <div class="feature-block">
+        <div class="feature-visual">
+          <div class="feature-screenshot">
+            <img src="images/screenshot-slideshow.png" alt="Slideshow Settings in SpeedySlideShow 25" class="screenshot-img" onclick="openLightbox(this.src)" role="button" tabindex="0">
+          </div>
+        </div>
+        <div class="feature-text">
+          <div class="feature-label">Slideshows</div>
+          <h3>Cinema for your photos</h3>
+          <p>Beautiful transitions, background music, title cards - your photos deserve more than a thumb-through in a file browser.</p>
+          <ul class="feature-list">
+            <li>Crossfade, zoom, slide &amp; fade transitions</li>
+            <li>Background music with playlist &amp; crossfade</li>
+            <li>Style presets: Memory Recap, Fast Highlights, Emotional</li>
+            <li>Customisable timing (1-10s per photo)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature: Quick Recap -->
+      <div class="feature-block feature-block--reverse">
+        <div class="feature-visual">
+          <div class="feature-screenshot">
+            <div class="screenshot-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Screenshot coming soon</span>
+            </div>
+          </div>
+        </div>
+        <div class="feature-text">
+          <div class="feature-label">Quick Recap</div>
+          <h3>A year in 60 seconds</h3>
+          <p>One click generates a beautiful memory recap from any time period. It smartly samples the best shots across weeks, months, or years.</p>
+          <ul class="feature-list">
+            <li>Week, month, custom range, or entire library</li>
+            <li>Smart sampling prioritises starred photos</li>
+            <li>30s, 60s, 2 min, or 5 min durations</li>
+            <li>Play instantly or export as video</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature: Face Detection -->
+      <div class="feature-block">
+        <div class="feature-visual">
+          <div class="feature-screenshot">
+            <div class="screenshot-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <span>Screenshot coming soon</span>
+            </div>
+          </div>
+        </div>
+        <div class="feature-text">
+          <div class="feature-label">People</div>
+          <h3>Find every photo of anyone</h3>
+          <p>AI-powered face detection recognises and groups your people automatically. Name them once, then filter, slideshow, or export by person.</p>
+          <ul class="feature-list">
+            <li>Runs 100% locally - no uploads</li>
+            <li>Automatic face clustering</li>
+            <li>"Featuring" filter in slideshows &amp; exports</li>
+            <li>Multi-tag support for group photos</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature: Export -->
+      <div class="feature-block feature-block--reverse">
+        <div class="feature-visual">
+          <div class="feature-screenshot">
+            <img src="images/screenshot-export.png" alt="Export Settings in SpeedySlideShow 25" class="screenshot-img" onclick="openLightbox(this.src)" role="button" tabindex="0">
+          </div>
+        </div>
+        <div class="feature-text">
+          <div class="feature-label">Export</div>
+          <h3>Share-ready in one click</h3>
+          <p>Export your slideshows as MP4 videos with music, transitions, and title cards - ready to share with family or play on any screen.</p>
+          <ul class="feature-list">
+            <li>MP4 export (H.264)</li>
+            <li>720p or 1080p with quality control</li>
+            <li>Music with fade-out and crossfade</li>
+            <li>Batch photo export to folder</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature: Quality Check -->
+      <div class="feature-block">
+        <div class="feature-visual">
+          <div class="feature-screenshot">
+            <img src="images/screenshot-quality.png" alt="Quality Validation in SpeedySlideShow 25" class="screenshot-img" onclick="openLightbox(this.src)" role="button" tabindex="0">
+          </div>
+        </div>
+        <div class="feature-text">
+          <div class="feature-label">Quality Check</div>
+          <h3>Only your best shots</h3>
+          <p>Automatically spots blurry, dark, overexposed, and duplicate photos so you can exclude them before building your slideshow.</p>
+          <ul class="feature-list">
+            <li>Blur, darkness &amp; exposure detection</li>
+            <li>Duplicate finder</li>
+            <li>Review &amp; exclude in one click</li>
+            <li>Keep your slideshows polished</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy Section -->
+  <section class="privacy" id="privacy">
+    <div class="container">
+      <div class="privacy-content">
+        <div class="privacy-icon">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h2>Your photos never leave your computer</h2>
+        <p>We built SpeedySlideShow 25 with one principle: <strong>your memories are yours</strong>. There are no cloud uploads, no accounts, no tracking, and no analytics. Face detection, smart grouping, quality checks - everything runs locally on your machine. Your photos stay exactly where they are.</p>
+        <div class="privacy-points">
+          <div class="privacy-point">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>No cloud uploads</span>
+          </div>
+          <div class="privacy-point">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>No account required</span>
+          </div>
+          <div class="privacy-point">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>No tracking or analytics</span>
+          </div>
+          <div class="privacy-point">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>100% offline capable</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section class="download" id="download">
+    <div class="container">
+      <div class="section-header">
+        <h2>Ready to <span class="gradient-text">relive your memories</span>?</h2>
+        <p>Download SpeedySlideShow 25 and start creating beautiful slideshows in minutes.</p>
+      </div>
+
+      <div class="download-card">
+        <div class="download-card-header">
+          <img src="images/speedyslideshow-splash.png" alt="SpeedySlideShow 25" class="download-logo">
+          <div>
+            <h3>SpeedySlideShow 25</h3>
+            <span class="download-version">Version 1.0.0 &middot; Windows</span>
+          </div>
+        </div>
+        <div class="download-price">
+          <span class="price-amount">Coming Soon</span>
+          <span class="price-note">One-time purchase &middot; No subscription</span>
+        </div>
+        <a href="#" class="btn btn-primary btn-xl btn-download">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download for Windows
+        </a>
+        <div class="system-req">
+          <h4>System Requirements</h4>
+          <ul>
+            <li>Windows 10 or later (64-bit)</li>
+            <li>4 GB RAM minimum</li>
+            <li>No installation required - just unzip and run</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>Built with care</h2>
+          <p>SpeedySlideShow 25 is made by <strong>BA Commander LTD</strong> - a small indie studio that believes software should respect your privacy, work offline, and cost a fair price once.</p>
+          <p>We built this because we wanted a simple, beautiful way to enjoy our own family photos without uploading them to yet another cloud service. We hope you love it too.</p>
+        </div>
+        <div class="about-contact">
+          <h3>Get in touch</h3>
+          <p>Got questions, feedback, or feature requests? We'd love to hear from you.</p>
+          <a href="mailto:bloodangelscommander@gmail.com" class="btn btn-ghost">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            bloodangelscommander@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <img src="images/speedyslideshow-splash.png" alt="SpeedySlideShow" class="footer-logo-img">
+        <span>SpeedySlideShow 25</span>
+      </div>
+      <p class="footer-copy">&copy; 2025 BA Commander LTD. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#download">Download</a>
+        <a href="#about">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="Screenshot preview">
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
