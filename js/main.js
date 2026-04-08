@@ -1,4 +1,4 @@
-// SpeedySlideShow 25 - Website Scripts
+// Speedy SlideShow 25 - Website Scripts
 
 // Navbar scroll effect
 const navbar = document.getElementById('navbar');
