@@ -1069,7 +1069,29 @@ a:hover {
     text-align: center;
   }
 
+  .key-messages,
+  .video-demo,
+  .features,
+  .privacy,
+  .pricing,
+  .download,
+  .about {
+    padding: 56px 0;
+  }
+
+  .section-header {
+    margin: 0 auto 36px;
+  }
+
   .download-card {
-    padding: 28px;
+    padding: 28px 20px;
+  }
+
+  .btn-download {
+    white-space: normal;
+    padding: 16px 20px;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.3;
   }
 }
