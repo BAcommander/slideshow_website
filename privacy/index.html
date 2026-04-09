@@ -8,6 +8,211 @@
   <link rel="canonical" href="https://speedyslideshow.com/privacy">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/png" href="../images/speedyslideshow-icon.png">
+  <style>
+    /* --- Privacy Policy Page (scoped, inlined to avoid CSS cache issues) --- */
+    .pp {
+      padding: 140px 0 100px;
+      background:
+        radial-gradient(ellipse 80% 50% at 50% 0%, rgba(88, 166, 255, 0.08) 0%, transparent 70%);
+      min-height: calc(100vh - 200px);
+    }
+
+    .pp-hero {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 64px;
+    }
+
+    .pp-shield {
+      width: 88px;
+      height: 88px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, rgba(88, 166, 255, 0.2), rgba(156, 100, 244, 0.2));
+      border: 1px solid rgba(88, 166, 255, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 28px;
+      color: #58a6ff;
+      box-shadow: 0 8px 32px rgba(88, 166, 255, 0.15);
+    }
+
+    .pp-hero h1 {
+      font-size: clamp(2.4rem, 5vw, 3.4rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+
+    .pp-tagline {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .pp-meta {
+      display: inline-block;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 6px 14px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .pp-grid {
+      max-width: 780px;
+      margin: 0 auto;
+      display: grid;
+      gap: 16px;
+    }
+
+    .pp-section {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 24px;
+      align-items: start;
+      transition: border-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .pp-section:hover {
+      border-color: rgba(88, 166, 255, 0.3);
+      transform: translateY(-2px);
+    }
+
+    .pp-section-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .pp-section-icon.icon-blue {
+      background: linear-gradient(135deg, rgba(88, 166, 255, 0.18), rgba(88, 166, 255, 0.06));
+      color: #58a6ff;
+    }
+
+    .pp-section-icon.icon-purple {
+      background: linear-gradient(135deg, rgba(156, 100, 244, 0.18), rgba(156, 100, 244, 0.06));
+      color: #b388ff;
+    }
+
+    .pp-section-icon.icon-orange {
+      background: linear-gradient(135deg, rgba(245, 166, 35, 0.18), rgba(245, 166, 35, 0.06));
+      color: #f5a623;
+    }
+
+    .pp-section-icon.icon-pink {
+      background: linear-gradient(135deg, rgba(255, 107, 157, 0.18), rgba(255, 107, 157, 0.06));
+      color: #ff6b9d;
+    }
+
+    .pp-section-body h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+    }
+
+    .pp-section-body p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    .pp-contact {
+      max-width: 780px;
+      margin: 32px auto 0;
+      padding: 40px 32px;
+      background:
+        linear-gradient(135deg, rgba(88, 166, 255, 0.08), rgba(156, 100, 244, 0.08));
+      border: 1px solid rgba(88, 166, 255, 0.2);
+      border-radius: var(--radius-lg);
+      text-align: center;
+    }
+
+    .pp-contact h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+    }
+
+    .pp-contact > p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+
+    .pp-contact a {
+      color: #58a6ff;
+      font-weight: 600;
+    }
+
+    .pp-contact a:hover {
+      color: #79b8ff;
+    }
+
+    .pp-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 28px auto 22px;
+      max-width: 200px;
+    }
+
+    .pp-company {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      line-height: 1.7;
+      margin: 0;
+      font-style: normal;
+    }
+
+    .pp-company strong {
+      color: var(--text);
+      display: block;
+      margin-bottom: 4px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 720px) {
+      .pp {
+        padding: 110px 0 60px;
+      }
+
+      .pp-hero {
+        margin-bottom: 40px;
+      }
+
+      .pp-section {
+        padding: 24px;
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .pp-section-icon {
+        width: 48px;
+        height: 48px;
+      }
+
+      .pp-contact {
+        padding: 32px 24px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -32,40 +237,73 @@
   </nav>
 
   <!-- Privacy Policy -->
-  <section class="privacy-policy">
+  <section class="pp">
     <div class="container">
-      <div class="privacy-policy-header">
-        <div class="privacy-icon">
-          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+
+      <header class="pp-hero">
+        <div class="pp-shield">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
         </div>
-        <h1>Privacy Policy</h1>
-        <p class="privacy-policy-meta">Speedy SlideShow 25 &middot; Last updated: April 2026</p>
+        <h1>Privacy <span class="gradient-text">Policy</span></h1>
+        <p class="pp-tagline">How Speedy SlideShow 25 handles your data &mdash; straightforward and honest.</p>
+        <span class="pp-meta">Last updated &middot; April 2026</span>
+      </header>
+
+      <div class="pp-grid">
+
+        <article class="pp-section">
+          <div class="pp-section-icon icon-blue">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          </div>
+          <div class="pp-section-body">
+            <h2>Overview</h2>
+            <p>Speedy SlideShow 25 is a Windows desktop application developed by BA Commander Limited. This privacy policy explains how the application handles your data.</p>
+          </div>
+        </article>
+
+        <article class="pp-section">
+          <div class="pp-section-icon icon-purple">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          </div>
+          <div class="pp-section-body">
+            <h2>Data Collection</h2>
+            <p>Speedy SlideShow 25 does not collect, store, transmit, or share any personal data. The application runs entirely on your local machine. No information about you, your photos, or your usage is ever sent to any server or third party.</p>
+          </div>
+        </article>
+
+        <article class="pp-section">
+          <div class="pp-section-icon icon-orange">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          </div>
+          <div class="pp-section-body">
+            <h2>Photos and Files</h2>
+            <p>All photos and files processed by Speedy SlideShow 25 remain on your device at all times. The application reads files from folders you select and does not upload, copy, or transmit them anywhere.</p>
+          </div>
+        </article>
+
+        <article class="pp-section">
+          <div class="pp-section-icon icon-pink">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <div class="pp-section-body">
+            <h2>Internet Access</h2>
+            <p>Speedy SlideShow 25 may use an internet connection solely to look up location names for photos that contain GPS coordinates (reverse geocoding). No photo data, personal information, or identifying information is transmitted during this process.</p>
+          </div>
+        </article>
+
       </div>
 
-      <div class="privacy-policy-content">
-        <h2>Overview</h2>
-        <p>Speedy SlideShow 25 is a Windows desktop application developed by BA Commander Limited. This privacy policy explains how the application handles your data.</p>
-
-        <h2>Data Collection</h2>
-        <p>Speedy SlideShow 25 does not collect, store, transmit, or share any personal data. The application runs entirely on your local machine. No information about you, your photos, or your usage is ever sent to any server or third party.</p>
-
-        <h2>Photos and Files</h2>
-        <p>All photos and files processed by Speedy SlideShow 25 remain on your device at all times. The application reads files from folders you select and does not upload, copy, or transmit them anywhere.</p>
-
-        <h2>Internet Access</h2>
-        <p>Speedy SlideShow 25 may use an internet connection solely to look up location names for photos that contain GPS coordinates (reverse geocoding). No photo data, personal information, or identifying information is transmitted during this process.</p>
-
-        <h2>Contact</h2>
-        <p>If you have any questions about this privacy policy please contact us at <a href="mailto:john@speedyslideshow.com">john@speedyslideshow.com</a>.</p>
-
-        <div class="privacy-company">
-          <p><strong>BA Commander Limited</strong><br>
-          2 Greenfield Court<br>
-          Elgin, IV30 5AB<br>
-          United Kingdom<br>
-          Company number SC843011</p>
-        </div>
+      <div class="pp-contact">
+        <h3>Questions about this policy?</h3>
+        <p>Get in touch at <a href="mailto:john@speedyslideshow.com">john@speedyslideshow.com</a></p>
+        <hr class="pp-divider">
+        <address class="pp-company">
+          <strong>BA Commander Limited</strong>
+          2 Greenfield Court, Elgin, IV30 5AB, United Kingdom<br>
+          Company number SC843011
+        </address>
       </div>
+
     </div>
   </section>
 
@@ -79,7 +317,6 @@
       <p class="footer-copy">&copy; 2025 SpeedySlideShow25. All rights reserved.</p>
       <div class="footer-links">
         <a href="../#features">Features</a>
-        <a href="/privacy">Privacy Policy</a>
         <a href="../#download">Download</a>
         <a href="../#about">Contact</a>
       </div>
