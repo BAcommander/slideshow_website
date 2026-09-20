@@ -58,6 +58,7 @@ function openLightbox(src) {
 
 function closeLightbox() {
   const lightbox = document.getElementById('lightbox');
+  if (!lightbox) return;
   lightbox.classList.remove('open');
   document.body.style.overflow = '';
 }
@@ -69,10 +70,23 @@ document.addEventListener('keydown', (e) => {
 // Smooth scroll for anchor links (fallback for browsers without CSS smooth scroll)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', (e) => {
-    const target = document.querySelector(anchor.getAttribute('href'));
+    const href = anchor.getAttribute('href');
+    const target = href === '#' ? document.body : document.getElementById(href.slice(1));
     if (target) {
       e.preventDefault();
       target.scrollIntoView({ behavior: 'smooth' });
     }
   });
 });
+
+// Load the trailer only when the visitor chooses to play it.
+const playDemo = document.getElementById('playDemo');
+if (playDemo) {
+  playDemo.addEventListener('click', () => {
+    const video = document.getElementById('heroVideo');
+    video.src = video.dataset.src;
+    video.hidden = false;
+    playDemo.hidden = true;
+    video.focus();
+  });
+}

@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Speedy SlideShow 25 - iCloud Photo Slideshow Maker for Windows</title>
-  <meta name="description" content="Turn your iPhone and iCloud photos into beautiful slideshows on Windows. Simple, private, powerful. Try free for 14 days. &pound;19.99 one-time purchase.">
+  <meta name="description" content="Turn your iPhone and iCloud photos into beautiful slideshows on Windows. Simple, private, powerful. Try free for 15 days. &pound;19.99 one-time purchase.">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/png" href="images/speedyslideshow-icon.png">
+  <link rel="icon" type="image/png" href="images/speedyslideshow-icon-small.png">
 </head>
 <body>
 
   <!-- Navigation -->
   <nav class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#" class="nav-logo">
-        <img src="images/speedyslideshow-icon.png" alt="Speedy SlideShow" class="nav-logo-img">
+      <a href="#hero" class="nav-logo">
+        <img src="images/speedyslideshow-icon-small.png" alt="Speedy SlideShow" class="nav-logo-img">
         <span>Speedy SlideShow<span class="version">25</span></span>
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
@@ -25,7 +25,7 @@
         <li><a href="#features">Features</a></li>
         <li><a href="#privacy">Privacy</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#download" class="btn btn-nav">Try Free</a></li>
+        <li><a href="https://apps.microsoft.com/detail/9PJCQGGC8QCP?cid=website-home-nav" target="_blank" rel="noopener" class="btn btn-nav">Try Free</a></li>
       </ul>
     </div>
   </nav>
@@ -34,24 +34,186 @@
   <section class="hero" id="hero">
     <div class="hero-bg"></div>
     <div class="container hero-content">
-      <img src="images/speedyslideshow-hero.png" alt="Speedy SlideShow 25" class="hero-logo" loading="eager">
-      <h1>Your memories deserve<br>a <span class="gradient-text">beautiful stage</span></h1>
-      <p class="hero-subtitle">Turn any photo folder into a stunning slideshow in seconds. No cloud uploads, no subscriptions, no complexity.</p>
-      <div class="hero-cta">
-        <a href="https://apps.microsoft.com/detail/9PJCQGGC8QCP?hl=en-us&gl=GB&ocid=pdpshare" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Get on Microsoft Store
-        </a>
-        <a href="#features" class="btn btn-ghost btn-lg">See Features</a>
+      <div class="hero-copy">
+        <p class="hero-eyebrow">YOUR PHOTOS. A STORY WORTH SHARING.</p>
+        <h1>From photo folder<br>to <span class="gradient-text">family favourite.</span></h1>
+        <p class="hero-subtitle">Turn your photos and videos into a slideshow with music. Relive a holiday, celebrate a birthday, or bring a year of memories together &mdash; right on your Windows PC.</p>
+        <div class="hero-cta">
+          <a href="https://apps.microsoft.com/detail/9PJCQGGC8QCP?cid=website-hero" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Try free for 15 days <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <p class="hero-offer"><strong>&pound;19.99 once.</strong> No subscription.</p>
+        <p class="hero-store-note">Windows 10+ &middot; Available on Microsoft Store</p>
       </div>
-      <div class="hero-badges">
-        <span class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Privacy-first</span>
-        <span class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> Windows 10+</span>
-        <span class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg> 14-day free trial, then &pound;19.99 once</span>
+      <div class="hero-demo" id="demo">
+        <div class="demo-bar"><span class="demo-status" aria-hidden="true"></span> Speedy SlideShow 25 <span class="demo-bar-label">SEE IT IN ACTION</span></div>
+        <div class="demo-player">
+          <button class="demo-poster" id="playDemo" aria-label="Play Speedy SlideShow demo">
+            <img src="images/screenshot-mainui.jpg" width="1600" height="900" alt="Speedy SlideShow organising a photo library" fetchpriority="high">
+            <span class="demo-play-icon" aria-hidden="true">&#9654;</span>
+            <span class="demo-play-label">Watch the app in action</span>
+          </button>
+          <iframe id="heroVideo" title="Speedy SlideShow 25 Demo" data-src="https://www.youtube-nocookie.com/embed/q8kneAIQKWM?controls=1&amp;rel=0&amp;playsinline=1&amp;autoplay=1" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen hidden></iframe>
+        </div>
+        <div class="demo-caption"><span>Photos + videos + your favourite music</span><span>Made for your memories</span></div>
       </div>
     </div>
-    <div class="hero-scroll-indicator">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+  </section>
+
+  <section class="how-it-works" aria-label="How it works">
+    <div class="container steps-grid">
+      <div class="step"><span class="step-number">01</span><div><h2>Choose your photos</h2><p>Start with a folder on your PC.</p></div></div>
+      <div class="step"><span class="step-number">02</span><div><h2>Add your music</h2><p>Set the mood with music and transitions.</p></div></div>
+      <div class="step"><span class="step-number">03</span><div><h2>Share the memories</h2><p>Export a video for family and friends.</p></div></div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Everything you need to<br><span class="gradient-text">relive your best moments</span></h2>
+        <p>From organising thousands of photos to creating cinema-quality slideshows, Speedy SlideShow 25 does it all - right on your computer.</p>
+      </div>
+
+      <!-- Feature: Quick & Easy -->
+      <div class="feature-block">
+        <div class="feature-visual">
+          <div class="feature-screenshot">
+            <img src="images/screenshot-mainui.jpg" alt="Speedy SlideShow 25 main interface" class="screenshot-img" loading="lazy" onclick="openLightbox(this.src)" role="button" tabindex="0">
+          </div>
+        </div>
+        <div class="feature-text">
+          <div class="feature-label">Simplicity</div>
+          <h3>Quick and easy to use</h3>
+          <p>No complicated timelines or confusing menus. Just pick your photos and go - Speedy SlideShow 25 keeps everything simple so you can focus on your memories.</p>
+          <ul class="feature-list">
+            <li>No complicated timeline - just pick and play</li>
+            <li>Handles both photos and videos</li>
+            <li>Filter photos by quality, people, or favourites</li>
+            <li>Auto-group slides by date or create your own custom order</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature: Organisation -->
+      <div class="feature-block feature-block--reverse">
+        <div class="feature-visual">
+          <div class="feature-screenshot">
+            <img src="images/screenshot-organise.jpg" alt="Rename and Organize Files in Speedy SlideShow 25" class="screenshot-img" loading="lazy" onclick="openLightbox(this.src)" role="button" tabindex="0">
+          </div>
+        </div>
+        <div class="feature-text">
+          <div class="feature-label">Organisation</div>
+          <h3>Point, click, organised</h3>
+          <p>Drop any folder in - iCloud, local drive, SD card - and Speedy SlideShow 25 instantly groups your photos by date or smart event clustering using time and location data.</p>
+          <ul class="feature-list">
+            <li>Automatic date-based grouping</li>
+            <li>Smart event clustering by time + location</li>
+            <li>Drag-and-drop reordering</li>
+            <li>Star favourites, exclude what you don't want</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature: Slideshows -->
+      <div class="feature-block">
+        <div class="feature-visual">
+          <div class="feature-screenshot">
+            <img src="images/screenshot-slideshow.png" alt="Slideshow Settings in Speedy SlideShow 25" class="screenshot-img" loading="lazy" onclick="openLightbox(this.src)" role="button" tabindex="0">
+          </div>
+        </div>
+        <div class="feature-text">
+          <div class="feature-label">Slideshows</div>
+          <h3>Cinema for your photos</h3>
+          <p>Beautiful transitions, background music, title cards - your photos deserve more than a thumb-through in a file browser.</p>
+          <ul class="feature-list">
+            <li>Crossfade, zoom, slide &amp; fade transitions</li>
+            <li>Background music with playlist &amp; crossfade</li>
+            <li>Style presets: Memory Recap, Fast Highlights, Emotional</li>
+            <li>Customisable timing (1-10s per photo)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature: Quick Recap -->
+      <div class="feature-block feature-block--reverse">
+        <div class="feature-visual">
+          <div class="feature-screenshot">
+            <img src="images/screenshot-quickrecap.png" alt="Quick Recap dialog" class="screenshot-img" loading="lazy" onclick="openLightbox(this.src)" role="button" tabindex="0">
+          </div>
+        </div>
+        <div class="feature-text">
+          <div class="feature-label">Quick Recap</div>
+          <h3>A year in 60 seconds</h3>
+          <p>One click generates a beautiful memory recap from any time period. It smartly samples the best shots across weeks, months, or years.</p>
+          <ul class="feature-list">
+            <li>Week, month, custom range, or entire library</li>
+            <li>Smart sampling prioritises starred photos</li>
+            <li>30s, 60s, 2 min, or 5 min durations</li>
+            <li>Play instantly or export as video</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature: Face Detection -->
+      <div class="feature-block">
+        <div class="feature-visual">
+          <div class="feature-screenshot">
+            <img src="images/screenshot-people.jpg" alt="People face detection in Speedy SlideShow 25" class="screenshot-img" loading="lazy" onclick="openLightbox(this.src)" role="button" tabindex="0">
+          </div>
+        </div>
+        <div class="feature-text">
+          <div class="feature-label">People</div>
+          <h3>Find every photo of anyone</h3>
+          <p>AI-powered face detection recognises and groups your people automatically. Name them once, then filter, slideshow, or export by person.</p>
+          <ul class="feature-list">
+            <li>Runs 100% locally - no uploads</li>
+            <li>Automatic face clustering</li>
+            <li>"Featuring" filter in slideshows &amp; exports</li>
+            <li>Multi-tag support for group photos</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature: Export -->
+      <div class="feature-block feature-block--reverse">
+        <div class="feature-visual">
+          <div class="feature-screenshot">
+            <img src="images/screenshot-export.jpg" alt="Export Settings in Speedy SlideShow 25" class="screenshot-img" loading="lazy" onclick="openLightbox(this.src)" role="button" tabindex="0">
+          </div>
+        </div>
+        <div class="feature-text">
+          <div class="feature-label">Export</div>
+          <h3>Share-ready in one click</h3>
+          <p>Export your slideshows as MP4 videos with music, transitions, and title cards, ready to share with family or play on any screen.</p>
+          <ul class="feature-list">
+            <li>MP4 export up to crisp 4K (H.265 or H.264)</li>
+            <li>Widescreen 16:9, or vertical 9:16 for TikTok &amp; Reels</li>
+            <li>Music with fade-out and crossfade</li>
+            <li>Batch photo export to folder</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature: Quality Check -->
+      <div class="feature-block">
+        <div class="feature-visual">
+          <div class="feature-screenshot">
+            <img src="images/screenshot-quality.jpg" alt="Quality Validation in Speedy SlideShow 25" class="screenshot-img" loading="lazy" onclick="openLightbox(this.src)" role="button" tabindex="0">
+          </div>
+        </div>
+        <div class="feature-text">
+          <div class="feature-label">Quality Check</div>
+          <h3>Only your best shots</h3>
+          <p>Automatically spots blurry, dark, overexposed, and duplicate photos so you can exclude them before building your slideshow.</p>
+          <ul class="feature-list">
+            <li>Blur, darkness &amp; exposure detection</li>
+            <li>Duplicate &amp; screenshot finder</li>
+            <li>Review &amp; exclude in one click</li>
+            <li>Keep your slideshows polished</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -85,170 +247,7 @@
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
           </div>
           <h3>No subscription, ever</h3>
-          <p>Try free for 14 days. If you love it, pay &pound;19.99 once and keep it forever. No subscriptions, no feature gates.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Video Demo Section -->
-  <section class="video-demo" id="demo">
-    <div class="container">
-      <div class="section-header">
-        <h2>See it in action</h2>
-        <p>Watch how Speedy SlideShow 25 turns your photo library into beautiful slideshows in minutes.</p>
-      </div>
-      <div class="video-wrapper">
-        <iframe src="https://www.youtube-nocookie.com/embed/q8kneAIQKWM?controls=0&modestbranding=1&rel=0&iv_load_policy=3&playsinline=1&disablekb=1" title="Speedy SlideShow 25 Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- Features Section -->
-  <section class="features" id="features">
-    <div class="container">
-      <div class="section-header">
-        <h2>Everything you need to<br><span class="gradient-text">relive your best moments</span></h2>
-        <p>From organising thousands of photos to creating cinema-quality slideshows, Speedy SlideShow 25 does it all - right on your computer.</p>
-      </div>
-
-      <!-- Feature: Quick & Easy -->
-      <div class="feature-block">
-        <div class="feature-visual">
-          <div class="feature-screenshot">
-            <img src="images/screenshot-mainui.png" alt="Speedy SlideShow 25 main interface" class="screenshot-img" onclick="openLightbox(this.src)" role="button" tabindex="0">
-          </div>
-        </div>
-        <div class="feature-text">
-          <div class="feature-label">Simplicity</div>
-          <h3>Quick and easy to use</h3>
-          <p>No complicated timelines or confusing menus. Just pick your photos and go - Speedy SlideShow 25 keeps everything simple so you can focus on your memories.</p>
-          <ul class="feature-list">
-            <li>No complicated timeline - just pick and play</li>
-            <li>Handles both photos and videos</li>
-            <li>Filter photos by quality, people, or favourites</li>
-            <li>Auto-group slides by date or create your own custom order</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Feature: Organisation -->
-      <div class="feature-block feature-block--reverse">
-        <div class="feature-visual">
-          <div class="feature-screenshot">
-            <img src="images/screenshot-organise.png" alt="Rename and Organize Files in Speedy SlideShow 25" class="screenshot-img" onclick="openLightbox(this.src)" role="button" tabindex="0">
-          </div>
-        </div>
-        <div class="feature-text">
-          <div class="feature-label">Organisation</div>
-          <h3>Point, click, organised</h3>
-          <p>Drop any folder in - iCloud, local drive, SD card - and Speedy SlideShow 25 instantly groups your photos by date or smart event clustering using time and location data.</p>
-          <ul class="feature-list">
-            <li>Automatic date-based grouping</li>
-            <li>Smart event clustering by time + location</li>
-            <li>Drag-and-drop reordering</li>
-            <li>Star favourites, exclude what you don't want</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Feature: Slideshows -->
-      <div class="feature-block">
-        <div class="feature-visual">
-          <div class="feature-screenshot">
-            <img src="images/screenshot-slideshow.png" alt="Slideshow Settings in Speedy SlideShow 25" class="screenshot-img" onclick="openLightbox(this.src)" role="button" tabindex="0">
-          </div>
-        </div>
-        <div class="feature-text">
-          <div class="feature-label">Slideshows</div>
-          <h3>Cinema for your photos</h3>
-          <p>Beautiful transitions, background music, title cards - your photos deserve more than a thumb-through in a file browser.</p>
-          <ul class="feature-list">
-            <li>Crossfade, zoom, slide &amp; fade transitions</li>
-            <li>Background music with playlist &amp; crossfade</li>
-            <li>Style presets: Memory Recap, Fast Highlights, Emotional</li>
-            <li>Customisable timing (1-10s per photo)</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Feature: Quick Recap -->
-      <div class="feature-block feature-block--reverse">
-        <div class="feature-visual">
-          <div class="feature-screenshot">
-            <img src="images/screenshot-quickrecap.png" alt="Quick Recap dialog" class="screenshot-img" onclick="openLightbox(this.src)" role="button" tabindex="0">
-          </div>
-        </div>
-        <div class="feature-text">
-          <div class="feature-label">Quick Recap</div>
-          <h3>A year in 60 seconds</h3>
-          <p>One click generates a beautiful memory recap from any time period. It smartly samples the best shots across weeks, months, or years.</p>
-          <ul class="feature-list">
-            <li>Week, month, custom range, or entire library</li>
-            <li>Smart sampling prioritises starred photos</li>
-            <li>30s, 60s, 2 min, or 5 min durations</li>
-            <li>Play instantly or export as video</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Feature: Face Detection -->
-      <div class="feature-block">
-        <div class="feature-visual">
-          <div class="feature-screenshot">
-            <img src="images/screenshot-people.jpg" alt="People face detection in Speedy SlideShow 25" class="screenshot-img" onclick="openLightbox(this.src)" role="button" tabindex="0">
-          </div>
-        </div>
-        <div class="feature-text">
-          <div class="feature-label">People</div>
-          <h3>Find every photo of anyone</h3>
-          <p>AI-powered face detection recognises and groups your people automatically. Name them once, then filter, slideshow, or export by person.</p>
-          <ul class="feature-list">
-            <li>Runs 100% locally - no uploads</li>
-            <li>Automatic face clustering</li>
-            <li>"Featuring" filter in slideshows &amp; exports</li>
-            <li>Multi-tag support for group photos</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Feature: Export -->
-      <div class="feature-block feature-block--reverse">
-        <div class="feature-visual">
-          <div class="feature-screenshot">
-            <img src="images/screenshot-export.png" alt="Export Settings in Speedy SlideShow 25" class="screenshot-img" onclick="openLightbox(this.src)" role="button" tabindex="0">
-          </div>
-        </div>
-        <div class="feature-text">
-          <div class="feature-label">Export</div>
-          <h3>Share-ready in one click</h3>
-          <p>Export your slideshows as MP4 videos with music, transitions, and title cards - ready to share with family or play on any screen.</p>
-          <ul class="feature-list">
-            <li>MP4 export (H.264)</li>
-            <li>720p or 1080p with quality control</li>
-            <li>Music with fade-out and crossfade</li>
-            <li>Batch photo export to folder</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Feature: Quality Check -->
-      <div class="feature-block">
-        <div class="feature-visual">
-          <div class="feature-screenshot">
-            <img src="images/screenshot-quality.png" alt="Quality Validation in Speedy SlideShow 25" class="screenshot-img" onclick="openLightbox(this.src)" role="button" tabindex="0">
-          </div>
-        </div>
-        <div class="feature-text">
-          <div class="feature-label">Quality Check</div>
-          <h3>Only your best shots</h3>
-          <p>Automatically spots blurry, dark, overexposed, and duplicate photos so you can exclude them before building your slideshow.</p>
-          <ul class="feature-list">
-            <li>Blur, darkness &amp; exposure detection</li>
-            <li>Duplicate finder</li>
-            <li>Review &amp; exclude in one click</li>
-            <li>Keep your slideshows polished</li>
-          </ul>
+          <p>Try free for 15 days. If you love it, pay &pound;19.99 once and keep it forever. No subscriptions, no feature gates.</p>
         </div>
       </div>
     </div>
@@ -290,17 +289,17 @@
     <div class="container">
       <div class="section-header">
         <h2>Simple, honest pricing</h2>
-        <p>Try Speedy SlideShow 25 completely free for 14 days - full access to every feature. If you love it, unlock the full version for a single one-time payment of &pound;19.99. That's it. No subscription, no annual fee, no surprises.</p>
+        <p>Try Speedy SlideShow 25 completely free for 15 days - full access to every feature. If you love it, unlock the full version for a single one-time payment of &pound;19.99. That's it. No subscription, no annual fee, no surprises.</p>
       </div>
       <div class="pricing-cards">
         <div class="pricing-card">
           <h3 class="pricing-card-title">Free Trial</h3>
-          <div class="pricing-card-price">14 days</div>
+          <div class="pricing-card-price">15 days</div>
           <ul class="pricing-card-features">
             <li>Full access to all features</li>
             <li>No commitment</li>
           </ul>
-          <a href="https://apps.microsoft.com/detail/9PJCQGGC8QCP?hl=en-us&gl=GB&ocid=pdpshare" target="_blank" rel="noopener" class="btn btn-ghost btn-xl">Download Free</a>
+          <a href="https://apps.microsoft.com/detail/9PJCQGGC8QCP?cid=website-pricing-trial" target="_blank" rel="noopener" class="btn btn-ghost btn-xl">Try free for 15 days</a>
         </div>
         <div class="pricing-card pricing-card--featured">
           <h3 class="pricing-card-title">Full Version</h3>
@@ -310,7 +309,7 @@
             <li>Yours forever</li>
             <li>Updates included</li>
           </ul>
-          <a href="https://apps.microsoft.com/detail/9PJCQGGC8QCP?hl=en-us&gl=GB&ocid=pdpshare" target="_blank" rel="noopener" class="btn btn-primary btn-xl">Buy on Microsoft Store</a>
+          <a href="https://apps.microsoft.com/detail/9PJCQGGC8QCP?cid=website-pricing-buy" target="_blank" rel="noopener" class="btn btn-primary btn-xl">Buy on Microsoft Store</a>
         </div>
       </div>
     </div>
@@ -326,19 +325,19 @@
 
       <div class="download-card">
         <div class="download-card-header">
-          <img src="images/speedyslideshow-icon.png" alt="Speedy SlideShow 25" class="download-logo">
+          <img src="images/speedyslideshow-icon-small.png" alt="Speedy SlideShow 25" class="download-logo">
           <div>
             <h3>Speedy SlideShow 25</h3>
             <span class="download-version">Version 1.0.0 &middot; Windows</span>
           </div>
         </div>
         <div class="download-price">
-          <span class="price-amount">Try Free for 14 Days</span>
+          <span class="price-amount">Try Free for 15 Days</span>
           <span class="price-note">Then &pound;19.99 - one-time purchase, no subscription</span>
         </div>
-        <a href="https://apps.microsoft.com/detail/9PJCQGGC8QCP?hl=en-us&gl=GB&ocid=pdpshare" target="_blank" rel="noopener" class="btn btn-primary btn-xl btn-download">
+        <a href="https://apps.microsoft.com/detail/9PJCQGGC8QCP?cid=website-download" target="_blank" rel="noopener" class="btn btn-primary btn-xl btn-download">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Get it on Microsoft Store
+          Try free for 15 days
         </a>
         <div class="system-req">
           <h4>System Requirements</h4>
@@ -382,7 +381,7 @@
   <footer class="footer">
     <div class="container footer-content">
       <div class="footer-logo">
-        <img src="images/speedyslideshow-icon.png" alt="Speedy SlideShow" class="footer-logo-img">
+        <img src="images/speedyslideshow-icon-small.png" alt="Speedy SlideShow" class="footer-logo-img">
         <span>Speedy SlideShow 25</span>
       </div>
       <p class="footer-copy">&copy; 2025 SpeedySlideShow25. All rights reserved.</p>
